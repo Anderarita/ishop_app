@@ -1,0 +1,18 @@
+{
+    "Create Zustand Store": {
+      "prefix": "zustandStore",
+      "body": [
+        "import {create} from 'zustand';",
+        "",
+        "export interface ${1:Name}State {",
+        "  name: string;",
+        "}",
+        "",
+        "export const use${1}Store = create<${1:Name}State>()((set, get) => ({",
+        "  name: '',",
+        "})),",
+        ""
+      ],
+      "description": "Create a Zustand store with TypeScript interface"
+    }
+}
